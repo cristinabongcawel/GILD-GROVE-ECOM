@@ -1,0 +1,360 @@
+{
+  "countries": [
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "regions": [
+        {
+          "code": "NCR",
+          "name": "National Capital Region",
+          "cities": [
+            { "code": "MNL", "name": "Manila" },
+            { "code": "QUE", "name": "Quezon City" },
+            { "code": "CAL", "name": "Caloocan" },
+            { "code": "MAK", "name": "Makati" },
+            { "code": "PAS", "name": "Pasig" },
+            { "code": "TAG", "name": "Taguig" },
+            { "code": "VAL", "name": "Valenzuela" },
+            { "code": "MAR", "name": "Marikina" },
+            { "code": "PAR", "name": "Parañaque" },
+            { "code": "MUN", "name": "Muntinlupa" },
+            { "code": "LAS", "name": "Las Piñas" },
+            { "code": "SAN", "name": "San Juan" }
+          ]
+        },
+        {
+          "code": "CEB",
+          "name": "Cebu",
+          "cities": [
+            { "code": "CEB", "name": "Cebu City" },
+            { "code": "MND", "name": "Mandaue" },
+            { "code": "LAP", "name": "Lapu-Lapu" },
+            { "code": "TAL", "name": "Talisay" }
+          ]
+        },
+        {
+          "code": "DVO",
+          "name": "Davao",
+          "cities": [
+            { "code": "DVO", "name": "Davao City" },
+            { "code": "TAG", "name": "Tagum" },
+            { "code": "PAN", "name": "Panabo" },
+            { "code": "SAM", "name": "Samal" }
+          ]
+        },
+        {
+          "code": "BAG",
+          "name": "Baguio",
+          "cities": [
+            { "code": "BAG", "name": "Baguio City" },
+            { "code": "LAO", "name": "La Trinidad" },
+            { "code": "SAB", "name": "Sablan" }
+          ]
+        },
+        {
+          "code": "BAT",
+          "name": "Batangas",
+          "cities": [
+            { "code": "LAG", "name": "Lipa" },
+            { "code": "BAG", "name": "Batangas City" },
+            { "code": "TAN", "name": "Tanauan" }
+          ]
+        },
+        {
+          "code": "ILO",
+          "name": "Iloilo",
+          "cities": [
+            { "code": "ILO", "name": "Iloilo City" },
+            { "code": "MIJ", "name": "Miagao" },
+            { "code": "DUM", "name": "Dumangas" }
+          ]
+        },
+        {
+          "code": "CEB2",
+          "name": "Bohol",
+          "cities": [
+            { "code": "TAGB", "name": "Tagbilaran" },
+            { "code": "TRB", "name": "Tubigon" },
+            { "code": "CLN", "name": "Clarin" }
+          ]
+        },
+        {
+          "code": "PAL",
+          "name": "Palawan",
+          "cities": [
+            { "code": "PU", "name": "Puerto Princesa" },
+            { "code": "RO", "name": "Roxas" },
+            { "code": "ELN", "name": "El Nido" }
+          ]
+        },
+        {
+          "code": "CAR",
+          "name": "Cordillera Administrative Region",
+          "cities": [
+            { "code": "BAG", "name": "Baguio City" },
+            { "code": "LAO", "name": "La Trinidad" },
+            { "code": "SAB", "name": "Sablan" },
+            { "code": "BOK", "name": "Bokod" },
+            { "code": "ITN", "name": "Itogon" }
+          ]
+        },
+        {
+          "code": "IL",
+          "name": "Ilocos Region",
+          "cities": [
+            { "code": "VIG", "name": "Vigan" },
+            { "code": "LAO", "name": "Laoag" },
+            { "code": "SAN", "name": "San Fernando, La Union" }
+          ]
+        },
+        {
+          "code": "CAG",
+          "name": "Cagayan Valley",
+          "cities": [
+            { "code": "TUG", "name": "Tuguegarao" },
+            { "code": "CAG", "name": "Cagayan" },
+            { "code": "ENR", "name": "Enrile" }
+          ]
+        },
+        {
+          "code": "CR",
+          "name": "Central Luzon",
+          "cities": [
+            { "code": "ANG", "name": "Angeles" },
+            { "code": "SAN", "name": "San Fernando" },
+            { "code": "MAL", "name": "Malolos" },
+            { "code": "OLU", "name": "Olongapo" }
+          ]
+        },
+        {
+          "code": "CALAB",
+          "name": "Calabarzon",
+          "cities": [
+            { "code": "LAG", "name": "Lipa" },
+            { "code": "BAT", "name": "Batangas City" },
+            { "code": "TAN", "name": "Tanauan" },
+            { "code": "CAV", "name": "Cavite City" }
+          ]
+        },
+        {
+          "code": "MIMAROPA",
+          "name": "Mimaropa",
+          "cities": [
+            { "code": "PU", "name": "Puerto Princesa" },
+            { "code": "ROX", "name": "Roxas" },
+            { "code": "ELN", "name": "El Nido" }
+          ]
+        },
+        {
+          "code": "BICOL",
+          "name": "Bicol Region",
+          "cities": [
+            { "code": "LEC", "name": "Legazpi" },
+            { "code": "NAG", "name": "Naga City" },
+            { "code": "SIR", "name": "Sorsogon" }
+          ]
+        },
+        {
+          "code": "VI",
+          "name": "Western Visayas",
+          "cities": [
+            { "code": "ILO", "name": "Iloilo City" },
+            { "code": "MIJ", "name": "Miagao" },
+            { "code": "DUM", "name": "Dumangas" }
+          ]
+        },
+        {
+          "code": "VII",
+          "name": "Central Visayas",
+          "cities": [
+            { "code": "CEB", "name": "Cebu City" },
+            { "code": "MND", "name": "Mandaue" },
+            { "code": "LAP", "name": "Lapu-Lapu" }
+          ]
+        },
+        {
+          "code": "VIII",
+          "name": "Eastern Visayas",
+          "cities": [
+            { "code": "TAC", "name": "Tacloban" },
+            { "code": "ORM", "name": "Ormoc" },
+            { "code": "CAT", "name": "Catbalogan" }
+          ]
+        },
+        {
+          "code": "IX",
+          "name": "Zamboanga Peninsula",
+          "cities": [
+            { "code": "ZAM", "name": "Zamboanga City" },
+            { "code": "ISL", "name": "Isabela City" },
+            { "code": "DIP", "name": "Dipolog" }
+          ]
+        },
+        {
+          "code": "X",
+          "name": "Northern Mindanao",
+          "cities": [
+            { "code": "CDO", "name": "Cagayan de Oro" },
+            { "code": "ILG", "name": "Iligan" },
+            { "code": "BAS", "name": "Malaybalay" }
+          ]
+        },
+        {
+          "code": "XI",
+          "name": "Davao Region",
+          "cities": [
+            { "code": "DVO", "name": "Davao City" },
+            { "code": "TAG", "name": "Tagum" },
+            { "code": "PAN", "name": "Panabo" }
+          ]
+        },
+        {
+          "code": "XII",
+          "name": "Soccsksargen",
+          "cities": [
+            { "code": "GEN", "name": "General Santos" },
+            { "code": "KOR", "name": "Koronadal" },
+            { "code": "SUL", "name": "Sultan Kudarat" }
+          ]
+        },
+        {
+          "code": "XIII",
+          "name": "Caraga",
+          "cities": [
+            { "code": "BUT", "name": "Butuan" },
+            { "code": "SUR", "name": "Surigao City" },
+            { "code": "TAN", "name": "Tandag" }
+          ]
+        },
+        {
+          "code": "BAR",
+          "name": "Bangsamoro Autonomous Region",
+          "cities": [
+            { "code": "MAR", "name": "Marawi" },
+            { "code": "KOT", "name": "Cotabato City" },
+            { "code": "JAB", "name": "Jabonga" }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "regions": [
+        {
+          "code": "CA",
+          "name": "California",
+          "cities": [
+            { "code": "LA", "name": "Los Angeles" },
+            { "code": "SF", "name": "San Francisco" },
+            { "code": "SD", "name": "San Diego" }
+          ]
+        },
+        {
+          "code": "NY",
+          "name": "New York",
+          "cities": [
+            { "code": "NYC", "name": "New York City" },
+            { "code": "BUF", "name": "Buffalo" },
+            { "code": "ROC", "name": "Rochester" }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "regions": [
+        {
+          "code": "TK",
+          "name": "Tokyo",
+          "cities": [
+            { "code": "SGY", "name": "Shibuya" },
+            { "code": "SHJ", "name": "Shinjuku" },
+            { "code": "CHY", "name": "Chiyoda" },
+            { "code": "MIN", "name": "Minato" }
+          ]
+        },
+        {
+          "code": "OS",
+          "name": "Osaka",
+          "cities": [
+            { "code": "OSC", "name": "Osaka City" },
+            { "code": "SAK", "name": "Sakai" },
+            { "code": "HIG", "name": "Higashiosaka" }
+          ]
+        },
+        {
+          "code": "KY",
+          "name": "Kyoto",
+          "cities": [
+            { "code": "KYC", "name": "Kyoto City" },
+            { "code": "UJI", "name": "Uji" },
+            { "code": "MAI", "name": "Maizuru" }
+          ]
+        },
+        {
+          "code": "HK",
+          "name": "Hokkaido",
+          "cities": [
+            { "code": "SAP", "name": "Sapporo" },
+            { "code": "HAK", "name": "Hakodate" },
+            { "code": "ASA", "name": "Asahikawa" }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UK",
+      "name": "United Kingdom",
+      "regions": [
+        {
+          "code": "LON",
+          "name": "London",
+          "cities": [
+            { "code": "WST", "name": "Westminster" },
+            { "code": "CAM", "name": "Camden" },
+            { "code": "KNS", "name": "Kensington" },
+            { "code": "HAC", "name": "Hackney" }
+          ]
+        },
+        {
+          "code": "MAN",
+          "name": "Manchester",
+          "cities": [
+            { "code": "MANC", "name": "Manchester City" },
+            { "code": "SAL", "name": "Salford" },
+            { "code": "TRF", "name": "Trafford" }
+          ]
+        },
+        {
+          "code": "BIR",
+          "name": "Birmingham",
+          "cities": [
+            { "code": "BIRC", "name": "Birmingham City" },
+            { "code": "SOL", "name": "Solihull" },
+            { "code": "COV", "name": "Coventry" }
+          ]
+        },
+        {
+          "code": "SCO",
+          "name": "Scotland",
+          "cities": [
+            { "code": "EDI", "name": "Edinburgh" },
+            { "code": "GLW", "name": "Glasgow" },
+            { "code": "ABE", "name": "Aberdeen" }
+          ]
+        },
+        {
+          "code": "WAL",
+          "name": "Wales",
+          "cities": [
+            { "code": "CRD", "name": "Cardiff" },
+            { "code": "SWA", "name": "Swansea" },
+            { "code": "NEW", "name": "Newport" }
+          ]
+        }
+      ]
+    }
+  ]
+}

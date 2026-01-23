@@ -1,0 +1,489 @@
+/* checkout.css */
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Layout */
+.checkout-layout {
+  width: 100%;
+}
+
+.checkout-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.checkout-left {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.checkout-right {
+  flex: 5;
+  display: flex;
+}
+
+/* Cards */
+.checkout-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+}
+
+.checkout-right .checkout-card {
+  height: 700px; /* Fixed height */
+  min-height: 600px;
+  width: 100%;
+  display: flex; /* Add this */
+  flex-direction: column; /* Add this */
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+}
+
+/* Typography */
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+/* Form Elements */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.form-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-full {
+  width: 100%;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+.form-control {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.form-select {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  font-size: 14px;
+}
+
+.btn-cancel {
+  background: none;
+  border: 2px solid #aeacac;
+  box-shadow: 0 2px 10px rgba(74, 73, 73, 0.5);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.btn-cancel:hover {
+  background: #1a1a1a;
+  color: white;
+}
+
+.btn-save {
+  background: #1a1a1a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  font-size: 14px;
+}
+
+.btn-save:hover {
+  background: #f0f0f0;
+  border: 2px solid #aeacac;
+  color: #000;
+}
+
+.btn-voucher {
+  padding: 6px 12px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.3s;
+  height: 40px;
+}
+
+.btn-voucher:hover {
+  background: #333;
+}
+
+.btn-confirm-order {
+  width: 100%;
+  padding: 14px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 5px;
+}
+
+.btn-confirm-order:hover {
+  background: #333;
+}
+
+/* Product Item */
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-image {
+  width: 85px;
+  height: 100px;
+  background: #e9ecef;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-top: -5px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+.product-attribute {
+  color: #666;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.product-price {
+  font-weight: 600;
+  margin-top: 8px;
+  color: #1a1a1a;
+}
+/* Modern Quantity Control */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 30px;
+  margin-left: auto;
+  margin-top: 13%;
+}
+
+/* Buttons with sharp inner corners */
+.qty-btn-left,
+.qty-btn-right {
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn-left:hover,
+.qty-btn-right:hover {
+  background: #f2f2f2;
+}
+
+/* Middle number */
+.qty-number {
+  width: 45px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Voucher Section */
+.order-summary-bottom{
+  margin-top: auto;
+}
+.voucher-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.voucher-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.voucher-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Summary */
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  padding: 1px 0;
+}
+
+.summary-line.total {
+  font-weight: 700;
+  font-size: 17px;
+  padding-top: 2px;
+  border-top: 2px solid #e4e4e4;
+}
+
+/* Payment Section */
+.payment-section {
+  width: 57%;
+  margin-top: -145px;
+}
+
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.payment-radio {
+  cursor: pointer;
+}
+
+.payment-label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ===== ORDER COMPLETED MODAL ===== */
+.order-complete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.order-complete-card {
+  width: 420px;
+  background: white;
+  border-radius: 14px;
+  padding: 30px 35px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+/* Top Truck Illustration */
+.order-complete-img {
+  width: 100%;
+  height: 120px;
+  background: url("./images/trunk.png") center/contain no-repeat;
+  margin-bottom: 10px;
+}
+
+/* ORDER Label */
+.order-label {
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.order-number {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Text Section */
+.order-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.order-subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Details Section */
+.order-details {
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.total-amount {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+/* Footer Button */
+.order-footer {
+  margin-top: 10px;
+}
+
+.order-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+  background: #333;
+}
+
+.btn-disabled {
+  background-color: grey;
+  border: 1px solid grey;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}

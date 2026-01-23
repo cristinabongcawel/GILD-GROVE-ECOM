@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Monteserrant", sans-serif;
+}
+.page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: none !important;
+}
+.hero-content h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: none !important;
+}
+
+.discover-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.discover-btn:hover {
+  background: white;
+  color: black;
+}
+/* ========= MODERN FOOTER ========= */
+.footer-modern {
+  background: #ffffff;
+  padding: 60px 80px 40px;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  border-top: 1px solid #eee;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-col a {
+  display: block;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer-col a:hover {
+  color: #000;
+}
+
+/* Payment icons */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.footer-icons img {
+  height: 26px;
+  opacity: 0.9;
+}
+
+/* Social icons */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+.footer-socials svg {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer-socials svg:hover {
+  color: #000;
+}
+
+/* Bottom section */
+.footer-bottom {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer-bottom-links a:hover {
+  color: #000;
+}

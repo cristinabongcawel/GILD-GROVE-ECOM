@@ -1,0 +1,112 @@
+/* login.css */
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Montserrat", sans-serif; }
+
+.login-hero {
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.login-form-wrapper {
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+.brand { font-weight: 700; font-size: 1.5rem; margin-bottom: 2rem; }
+.title { font-weight: 700; font-size: 2.5rem; margin-bottom: 0.5rem; }
+.subtitle { color: #6c757d; margin-bottom: 2rem; }
+
+.input-group { position: relative; margin-bottom: 1.5rem; }
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+.input-group input:focus { border-color: #000; outline:none; }
+.error-text {
+  position: absolute;
+  right: 0; top: 100%;
+  color: #d9534f;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.remember input { margin-right: 8px; }
+.forgot { text-decoration: none; color: #000; font-weight: 600; }
+.forgot:hover { text-decoration: underline; }
+
+.login-btn {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+.login-btn:hover { background: #333; }
+
+.general-error {
+  color: #d9534f;
+  background: #f9d7da;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #d9534f;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.social-login { display: flex; gap: 12px; justify-content: center; margin-bottom: 2rem; }
+.social-login button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.social-login button:hover { background: #f0f0f0; }
+
+.signup { text-align: center; color: #6c757d; }
+.signup a { font-weight: 600; color: #000; text-decoration: none; }
+.signup a:hover { text-decoration: underline; }
+
+.login-right {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+@media (min-width: 768px) { .login-right { display: block; } }

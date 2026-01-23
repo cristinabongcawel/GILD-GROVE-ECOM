@@ -1,0 +1,314 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: white;
+  margin-top: 5px;
+  padding: 12px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Flex Layout for Full-Width Alignment */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Left Links */
+.nav-left {
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  letter-spacing: 10px;
+  padding-left: 35px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+/* Center Logo */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* Right Icons & Buttons */
+.nav-right {
+  display: flex;
+  gap: 20px;
+  padding-right: 35px;
+}
+
+.nav-icon {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: #666;
+}
+
+.nav-login {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  padding: 10px 0;
+}
+
+.nav-login:hover {
+  color: #666;
+}
+
+.nav-join {
+  background-color: #000;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid #000;
+}
+
+.nav-join:hover {
+  background-color: #333;
+  border-color: #333;
+  transform: translateY(-1px);
+}
+
+/* Account Name + Icon */
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #232222;  /* Light gray background */
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-user:hover {
+  background-color: #000;  /* Slightly darker on hover */
+}
+
+.nav-account-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.nav-username {
+  margin-left: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-user-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Sidebar Background */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 80;
+}
+
+/* Slide Sidebar */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #fff;
+  border-left: 1px solid #e6e6e6;
+  padding: 20px 15px;
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 150;
+}
+
+/* Close button */
+.close-btn {
+  align-self: flex-end;
+  border: none;
+  background: none;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+}
+
+/* Sections */
+.side-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.bottom-section {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+/* Items */
+.side-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 16px 0;
+  margin-bottom: 10px;
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+/* Sidebar hover effect */
+.side-item:hover {
+  background: #000;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+/* Make icon turn white when item is hovered */
+.side-item:hover .side-icon {
+  color: #fff !important;
+  font-size: 18px !important;
+}
+
+/* Icon style */
+.side-icon {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #000;
+}
+/* Logout */
+.logout {
+  color: #d33;
+  border: none;
+  background: none;
+}
+
+.logout .side-icon {
+  color: #d33;
+}
+.logout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.logout-modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logout-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-cancel {
+  background: #ccc;
+  padding: 6px 8px;
+  border-radius: 6px;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-logout {
+  background: #d33;
+  border-radius: 6px;
+  padding: 6px 8px;
+  border: none;
+  color: white;
+}
