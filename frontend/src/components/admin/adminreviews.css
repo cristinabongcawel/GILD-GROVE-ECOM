@@ -1,0 +1,475 @@
+/* ================= Admin Reviews CSS ================= */
+
+/* ===== General Layout ===== */
+/*.admin-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px 24px;
+  overflow-x: auto;
+}*/
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+
+}
+
+/* ===== Stats Cards ===== */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-width: 140px;
+}
+
+.stat-card.active {
+  border: 2px solid #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-card .stat-value {
+  font-size: 18px;
+}
+
+.stat-card .stat-label {
+  font-size: 11px;
+}
+
+
+/* ===== Top Actions / Tabs ===== */
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background: #f7f8fa;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  z-index: 50;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 250px;        /* same width as sidebar */
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.tab {
+  padding: 8px 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s;
+  
+}
+
+.tab.active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+/* ===== Search Input ===== */
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+}
+
+.search-input {
+  padding: 8px 12px 8px 34px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-input:focus {
+  border-color: #000;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* ===== Date Input ===== */
+.date-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.date-input:focus {
+  border-color: #000;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.search-input::placeholder,
+.date-input::placeholder {
+  color: #aaa;
+}
+
+/* ===== Reviews List / Card ===== */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: all 0.2s;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+}
+
+.review-customer-my {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.customer-email {
+  display: block;
+  font-size: 12px;
+  color: #888;
+}
+
+.review-rating-my {
+  margin-bottom: 8px;
+}
+
+.review-text-my {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.admin-reply-my {
+  font-size: 13px;
+  color: #000;
+  background: #f0f7ff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.review-date {
+  font-size: 12px;
+  color: #888;
+}
+
+.review-actions button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: all 0.2s;
+}
+
+.review-actions button:hover {
+  background: #333;
+}
+
+/* ===== Stars ===== */
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.rating-number {
+  margin-left: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* ===== Visibility Badges ===== */
+.visibility-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 80px;
+}
+
+.visibility-badge.visible {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.visibility-badge.hidden {
+  background-color: #f5f5f5;
+  color: #757575;
+  border: 1px solid #e0e0e0;
+}
+
+/* ===== Modal ===== */
+.admin-modal-overlay,
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.admin-modal,
+.image-modal {
+  background: #fff;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  animation: modalFade 0.2s ease-in-out;
+}
+
+@keyframes modalFade {
+  from {opacity:0; transform: translateY(-20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+.admin-modal-header h2 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.admin-modal-content textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+}
+
+.admin-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.admin-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.admin-btn.admin-cancel {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.admin-btn.admin-cancel:hover {
+  background: #e0e0e0;
+}
+
+.admin-btn.admin-save {
+  background: #000;
+  color: #fff;
+}
+
+.admin-btn.admin-save:hover {
+  background: #333;
+}
+
+/* ===== View Image Button ===== */
+.view-image-btn-my {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.view-image-btn-my:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ===== Image Modal ===== */
+.image-modal {
+  position: relative;
+  padding: 16px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-modal img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+/* ===== Scrollbar Styling ===== */
+.reviews-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reviews-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+.reviews-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+.reviews-list::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .search-input {
+    width: 140px;
+  }
+  .top-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .review-actions button {
+    margin-top: 4px;
+    margin-left: 0;
+  }
+}

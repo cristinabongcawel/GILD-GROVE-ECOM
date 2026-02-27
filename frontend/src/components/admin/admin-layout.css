@@ -1,0 +1,84 @@
+/* admin-layout.css - CLEAN VERSION */
+
+/* ===== SIDEBAR RESPONSIVE LAYOUT ===== */
+
+/* 1. Reset the admin-page to fix positioning */
+.admin-page {
+  display: block; /* Change from flex to block */
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* 2. Sidebar positioning */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+  /* Your existing sidebar styles remain */
+  width: 260px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* 3. Main content - NO margin initially */
+.admin-content {
+  position: relative;
+  padding: 25px;
+  transition: margin-left 0.3s ease;
+  /* Start with NO margin - we'll add it conditionally */
+}
+
+/* 4. Add margin ONLY when sidebar is present and expanded */
+.admin-page:has(.sidebar:not(.collapsed)) .admin-content {
+  margin-left: 260px;
+}
+
+/* 5. Add margin when sidebar is collapsed */
+.admin-page:has(.sidebar.collapsed) .admin-content {
+  margin-left: 80px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* Remove any hardcoded margins from your page-specific elements */
+.header,
+.table-wrapper,
+.right-actions,
+.top-actions {
+  margin-left: 0 !important;
+}
+
+/* Make sure tables don't overflow */
+.table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}

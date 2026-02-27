@@ -1,0 +1,416 @@
+/* ORDERS PAGE CSS - EXACTLY MATCHING PRODUCTS TABLE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Monteserrant", sans-serif;
+}
+
+.admin-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+  margin-right: 20px;
+  background: #ffffff;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* TOP ACTIONS BAR - Matching Products page */
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+/* TABS - Matching Products page */
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  background: #e8e8e8;
+}
+
+.tab.active {
+  background: #1e1e1f;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Toolbar - Now moved under tabs */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.search-input {
+  padding: 10px 14px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  background: white;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #222;
+  box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.1);
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filters input,
+.filters select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  background: white;
+}
+
+.filters select {
+  min-width: 140px;
+}
+
+.filters input:hover,
+.filters select:hover {
+  border-color: #000;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #222;
+  box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.1);
+}
+
+.actions-order{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-order {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn.primary-order {
+  background: #111827;
+  color: white;
+  border: 1px solid #111827;
+  min-width: 140px;
+}
+
+.btn.primary-order:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn.primary-order:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* TABLE WRAPPER - Exact match to Products */
+.orders-table-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee; /* Thin light gray border */
+  margin-top: 0; /* Changed from 25px */
+}
+
+/* TABLE - Exact match to Products */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* TABLE HEADER - White background like Products */
+.orders-table thead {
+  background: white !important; /* No colored background */
+}
+
+.orders-table th {
+  padding: 12px;
+  font-size: 13px;
+  color: #555; /* Same color as Products table */
+  text-align: left;
+  background: white !important; /* White background */
+  border-bottom: 1px solid #eee; /* Thin border */
+  font-weight: 600;
+}
+
+/* TABLE BODY - Exact match */
+.orders-table td {
+  padding: 14px 12px !important; /* Same padding as Products */
+  border-bottom: 1px solid #eee; /* Thin light gray border */
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  vertical-align: middle;
+}
+
+.orders-table tbody tr {
+  height: 60px; /* Fixed height like Products */
+}
+
+.orders-table tbody tr:hover {
+  background-color: #fafafa; /* Light hover like Products */
+}
+
+/* CHECKBOX - Black accent */
+.orders-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #000; /* Black checkbox */
+  cursor: pointer;
+}
+
+/* ORDER NUMBER - Black link like Products */
+.blue-link {
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.blue-link:hover {
+  text-decoration: underline;
+}
+
+/* STATUS SELECT - Match Products styling */
+.status-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  color: #000; /* Black text */
+  font-weight: 500;
+  background: none !important;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #222;
+  box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.1);
+}
+
+/* Status colors - More subtle like Products */
+.status-select.pending {
+  color: #000;
+  border-color: #f2f2f2;
+  background: #f2f2f2;
+}
+
+.status-select.paid {
+  color: #000;
+  border-color: #e8e8e8;
+  background: #e8e8e8;
+}
+
+.status-select.shipping {
+  color: #000;
+  border-color: #f0f0f0;
+  background: #f0f0f0;
+}
+
+.status-select.completed {
+  color: #000;
+  border-color: #e8e8e8;
+  background: #e8e8e8;
+}
+
+.status-select.refunded {
+  color: #000;
+  border-color: #f2f2f2;
+  background: #f2f2f2;
+}
+
+/* DROPDOWN BUTTON - Simple like Products */
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 3px;
+  color: #555;
+}
+
+.dropdown-btn:hover {
+  color: #000;
+}
+
+/* DETAILS ROW - Match variant row styling */
+.details-row {
+  background: #fafafa !important; /* Light gray like Products variants */
+}
+
+.details-row td {
+  background: #fafafa !important;
+  padding: 0 !important;
+}
+
+.details-wrapper {
+  padding: 15px;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #888;
+}
+
+.search-input {
+  padding-left: 30px; /* leave space for the icon */
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.detail-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 10px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.item-img {
+  width: 65px;
+  height: 65px;
+  background: #ddd;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+/* PAGINATION - Clean, no background */
+.pagination-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.pagination-controls button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  border-color: #000;
+  background: #fafafa;
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Make everything black/dark gray text */
+.search-input::placeholder,
+.filters select option,
+.pagination-controls button {
+  color: #666 !important;
+}
+
+/* Ensure consistent cell widths like Products */
+.orders-table th:first-child,
+.orders-table td:first-child {
+  width: 60px;
+  padding-left: 16px;
+}
+
+.orders-table th:last-child,
+.orders-table td:last-child {
+  width: 100px;
+  padding-right: 16px;
+}

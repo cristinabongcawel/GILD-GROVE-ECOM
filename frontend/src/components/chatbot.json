@@ -1,0 +1,41 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good day"],
+      "responses": [
+        "Hello ✨ How can I help you today?",
+        "Hi there! Looking for something special?"
+      ]
+    },
+    {
+      "tag": "shipping",
+      "patterns": ["shipping", "delivery", "how long", "arrive"],
+      "responses": [
+        "🚚 Orders usually arrive within 2–5 business days.",
+        "Delivery takes 2–5 days depending on your location."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": ["payment", "pay", "cod", "cash on delivery"],
+      "responses": [
+        "💳 We accept Cash on Delivery and online payments.",
+        "You can pay via COD or online checkout."
+      ]
+    },
+    {
+      "tag": "product_perfume",
+      "patterns": ["perfume", "fragrance", "scent"],
+      "responses": [
+        "🌸 Our perfumes are long-lasting and crafted for everyday luxury.",
+        "Looking for a fresh or sweet scent? I can help!"
+      ]
+    }
+  ],
+  "fallback": [
+    "Hmm 🤔 I’m not sure about that yet.",
+    "Can you try asking in another way?",
+    "I’m still learning, but I’d love to help!"
+  ]
+}
